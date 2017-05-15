@@ -1,0 +1,30 @@
+* {
+   fontfamily: 'Roboto', cursive;
+   backgroundcolor: salmon;
+   textalign: center;
+ }
+
+header {
+  height: 100px;
+  background: #444;
+}
+
+header div {
+  width: 900px;
+  margin: 0 auto;
+}
+header div img {
+  float: left;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 43px;
+}
+
+
+   li {
+     margin: 0px;
