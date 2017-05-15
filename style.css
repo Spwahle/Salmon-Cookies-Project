@@ -1,5 +1,5 @@
 * {
-   fontfamily: 'Roboto', cursive;
+   fontfamily: 'fresh-fish', cursive;
    backgroundcolor: salmon;
    textalign: center;
  }
@@ -7,6 +7,7 @@
 header {
   height: 100px;
   background: #444;
+  font-family: 'baloo'
 }
 
 header div {
