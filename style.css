@@ -1,8 +1,7 @@
 * {
-   fontfamily: 'fresh-fish', cursive;
-   backgroundcolor: salmon;
-   textalign: center;
- }
+  background-color: salmon;
+
+}
 
 header {
   height: 100px;
