@@ -1,20 +1,9 @@
 'use strict';
 
-// calculate the number of cookies each Local must make every day (in a file called sales.html)
-//depends on the hours of operation (6:00 AM to 8:00 PM for all Locals) and a few factors unique to each Local:
-//The minimum number of customers per hour.
-//The maximum number of customers per hour.
-//The average number of cookies purchased per customer.
-
-//add and remove Locals from the daily projections report
-//modify the input numbers for each Local based on day of the week, special events, and other factors
-//see these numbers with nice formatting in a web application
-
-//design work and construction of a public-facing page (called index.html)
-//color scheme and a custom font, and maybe additional images, for a public-facing webpage
-
+//var for the hours so we can print this out wiht the data
 var hoursOfOperation = ['6:00 AM', '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM'];
 
+//object that is created with attributes
 var cookFirstPike = {
   Local: 'First and Pike',
   minimum: 23,
