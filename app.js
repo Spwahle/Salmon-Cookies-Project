@@ -78,14 +78,14 @@ function salesReportTableHead (CookShops){
   position = document.getElementById('salesReportTable');
   position.appendChild(newElement);
 
-  newElement = document.createElement('tr');
-  newElement.id = 'colHeadersRow';
-  position = document.getElementById('colHeaders');
-  position.appendChild(newElement);
-
-  newElement = document.createElement('th');
-  position = document.getElementById('colHeadersRow');
-  position.appendChild(newElement);
+  // newElement = document.createElement('tr');
+  // newElement.id = 'colHeadersRow';
+  // position = document.getElementById('colHeaders');
+  // position.appendChild(newElement);
+  //
+  // newElement = document.createElement('th');
+  // position = document.getElementById('colHeadersRow');
+  // position.appendChild(newElement);
 
   for (var i = 0; i < hoursOfOperation.length; i++){
     newElement = document.createElement('th');
@@ -128,20 +128,20 @@ function salesReportTableFoot (){
   position = document.getElementById('colTotals');
   position.appendChild(newElement);
 
-  newElement = document.createElement('th');
-  var crText = document.createTextNode('Totals:');
-  newElement.appendChild(crText);
-  position = document.getElementById('colTotalsRow');
-  position.appendChild(newElement);
-
-  for (var i = 0; i <= hoursOfOperation.length; i++){
-    newElement = document.createElement('td');
-    crText = document.createTextNode(cookieTotalsPerHourAllShops[i]);
-    newElement.appendChild(crText);
-    position = document.getElementById('colTotalsRow');
-    position.appendChild(newElement);
-  }
-}
+//   newElement = document.createElement('th');
+//   var crText = document.createTextNode('Totals:');
+//   newElement.appendChild(crText);
+//   position = document.getElementById('colTotalsRow');
+//   position.appendChild(newElement);
+//
+//   for (var i = 0; i <= hoursOfOperation.length; i++){
+//     newElement = document.createElement('td');
+//     crText = document.createTextNode(cookieTotalsPerHourAllShops[i]);
+//     newElement.appendChild(crText);
+//     position = document.getElementById('colTotalsRow');
+//     position.appendChild(newElement);
+//   }
+// }
 
 salesReportTableHead(CookShops);
 
