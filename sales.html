@@ -1,11 +1,44 @@
-<!DOCTYPE>
 <html>
-<head>
-    <link href="SalesStyle.css" rel="stylesheet">
- <title>Salmon Cookies - Sales Table</title>
+  <head>
+    <title>Pat's Salmon Cookies</title>
+    <link rel="stylesheet" href="SalesStyle.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya SC" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
 
-</head>
-<body id="body">
- <script src="app.js"></script>
-</body>
+    <form id="store_form">
+      <fieldset>
+        <label for="inputLocal">Store name</label>
+        <input type="text" name="inputLocal" placeholder="Enter new store name here" required>
+      </fieldset>
+      <fieldset>
+        <label for="minCust">Minimum customers</label>
+        <input type="text" name="minCust" placeholder="Enter a number for minimum customers" required>
+      </fieldset>
+      <fieldset>
+        <label for="maxCust">Maximum customers</label>
+        <input type="text" name="maxCust" placeholder="Enter a number for maximum customers" required>
+      </fieldset>
+      <fieldset>
+        <label for="inputAvgPerCust">Average cookies per customer</label>
+        <input type="text" name="inputAvgPerCust" placeholder="Enter a number for average cookies per customer" required>
+      </fieldset>
+      <button id="submit-button" type="submit">Add New Store</button>
+    </form>
+
+    <table>
+      <thead id="tablehead">
+
+      </thead>
+      <tbody id="tablebody">
+        <!--     our table info goes in here -->
+      </tbody>
+      <tfoot id="tablefoot">
+
+      </tfoot>
+    </table>
+    <script src="app.js"></script>
+  </body>
 </html>
