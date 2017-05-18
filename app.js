@@ -1,5 +1,6 @@
 'use strict';
 
+
 var elForm = document.getElementById('store_form');
 
 // constructor function to include attributes of local, min, max and avgPerCust

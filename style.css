@@ -5,9 +5,9 @@
 }
 
 body{
-  background-image: url(http://revelwallpapers.net/d/756D78797059764879724B586B356952716D3573734E6A653238696A63773D3D/rain-road.jpg);
-  width:1500px;
 
+    background-image: url(https://previews.123rf.com/images/djmattaar/djmattaar1108/djmattaar110800028/10354222-Background-of-thatched-roof-Stock-Photo.jpg);
+  width:1500px;
 }
 
 header{
@@ -26,6 +26,7 @@ header div{
 header h1, header h2{
   display:inline-block;
   position:absolute;
+
   top:110px;
   width:100%;
   text-align:center;
@@ -37,7 +38,10 @@ header h1, header h2{
 header h2{
   position:relative;
   background:none;
+
   top:220px;
+
+
   font:30px 'Bree Serif', serif;
 }
 
@@ -54,6 +58,7 @@ header nav{
   background-color: #F2AC54;
   text-align:center;
   margin-top: 280px;
+
 
 }
 
