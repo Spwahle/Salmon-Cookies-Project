@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(https://previews.123rf.com/images/djmattaar/djmattaar1108/djmattaar110800028/10354222-Background-of-thatched-roof-Stock-Photo.jpg);
+  background-image: url(http://revelwallpapers.net/d/756D78797059764879724B586B356952716D3573734E6A653238696A63773D3D/rain-road.jpg);
   width:1500px;
 
 }
@@ -13,7 +13,7 @@ body{
 header{
   height:500px;
   background-color: #FF925D;
-  background-image:url(http://cdn.wallpapersafari.com/75/35/kWgtsU.jpg);
+  background-image:url(http://revelwallpapers.net/d/756D78797059764879724B586B356952716D3573734E6A653238696A63773D3D/rain-road.jpg);
   background-repeat:no-repeat;
   background-size:cover;
   margin: 0 auto;
@@ -51,7 +51,7 @@ header div img{
 header nav{
   width:100%;
   height:70px;
-  background-color: #214E8B;
+  background-color: #F2AC54;
   text-align:center;
   margin-top: 280px;
 
@@ -59,22 +59,31 @@ header nav{
 
 header nav li{
   display:inline-block;
-  background: black;
+  background: #4D4E6D;
   border-radius:15px;
-  font:35px 'Bree Serif', serif;
+  font:35px 'Open Sans', serif;
   color:white;
-  margin:10px 10px;
+  margin:-40px 0px;
   padding:0px 50px;
 
 }
 
+nav {
+  border-color: black;
+  border: 3px;
+  padding-top: 79px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
 header nav li a{
   text-decoration:none;
+  font-family:
   color:white;
 }
 
 header nav li a:hover{
-  color:;
+  color: ;
 }
 
 main{
@@ -85,32 +94,34 @@ main{
 .Paragraph{
   display:inline-block;
   float:left;
-  background:  #214E8B;
+  background:  #4D4E6D;
   width: 500px;
   height:500px;
   margin:50px 20px 20px 20px;
 }
 
 .Paragraph h3{
-  font: 20px 'Bree Serif';
-  color: white;
+  font: 35px 'Bree Serif';
+  color: black;
   text-align: center;
+  margin: 30px;
+
 }
 
 .Paragraph p{
-  background: black;
-  text-align:center;
+  background: #214E8B;
+  text-align: center;
   font: 24px 'Open Sans', sans-serif;
-  color:white;
-  line-height:40px;
-  margin:20px 35px;
-  padding:20px 5px;
+  color: black;
+  line-height: 30px;
+  margin: 60px 35px;
+  padding: 20px 5px;
 }
 
 .Information{
   display:inline-block;
   float:left;
-  background: red;
+  background: #4D4E6D;
   border-radius:5px;
   width:600px;
   height:200px;
@@ -157,7 +168,7 @@ main{
 .RightPan {
   display:inline-block;
   float:left;
-  background: red;
+  background:  #4D4E6D;
   border-radius:5px;
   width:600px;
   height:300px;
@@ -166,30 +177,30 @@ main{
 }
 
 .RightPan h3{
-  font: 30px , serif;
-  color:white;
+  font: 30px baloo, serif;
+  color: black;
   text-align:center;
 }
 
 article{
   display:inline-block;
-  border:3px solid white;
+  border: 1px solid white;
   border-radius:5px;
   float:left;
-  background:rgba(0, 0, 0, 0.3);
+  background: #214E8B;
   width:294px;
   height:255px;
 }
 
 article h4{
-  font:23px 'Bree Serif', serif;
-  color:white;
+  font:23px 'Baloo', serif;
+  color: black;
   text-align:center;
 }
 
 article p{
   font:15px 'Bree Serif', sans-serif;
-  color:white;
+  color: black;
   margin:10px;
   text-align:center;
 }
@@ -197,7 +208,6 @@ article p{
 .community a{
   font:15px 'Sans Open', sans-serif;
   text-decoration:none;
-  color:#26C7FF;
 }
 
 .RightPan a:hover{

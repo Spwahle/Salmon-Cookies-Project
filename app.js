@@ -9,21 +9,21 @@ function StoreLocation(local, min, max, avgPerCust) {
   this.max = max;
   this.avgPerCust = avgPerCust;
 
-  // creating a method that will take math random by a number between max and min, then rounding it to a whole
+    // creating a method that will take math random by a number between max and min, then rounding it to a whole
 
   this.randomCustomer = function() {
     return Math.floor(Math.random() * (this.max - this.min)) + this.min;
   };
 
-  // this piggy backs off the back of my last method. It takes the randomCustomer function and multiples it by a math.floor version of avg
+    // this piggy backs off the back of my last method. It takes the randomCustomer function and multiples it by a math.floor version of avg
 
   this.randomSales = function() {
     return Math.floor(this.randomCustomer() * this.avgPerCust);
   };
 }
 
-// creates a prototype method which
-StoreLocation.prototype.render = function() {
+// creates a prototype method which giveStore will create tablebody, table row and table data
+StoreLocation.prototype.giveStore = function() {
   var elTable = document.getElementById('tablebody');
   var arrData = [];
   var elNewRow = document.createElement('tr');
@@ -44,18 +44,18 @@ StoreLocation.prototype.render = function() {
   elTable.appendChild(elNewRow);
 };
 
-// function to grab data from form and store it in
+// function to grab data from the form after and store it in these vars
 function getFormData(event) {
   event.preventDefault();
 
   var local = event.target.inputlocal.value;
-  var min = parseInt(event.target.min.value);
-  var max = parseInt(event.target.max.value);
+  var min = parseInt(event.target.inputmin.value);
+  var max = parseInt(event.target.inputmax.value);
   var avgPerCust = parseFloat(event.target.inputAvgPerCust.value);
 
   var newStore = new StoreLocation(local, min, max, avgPerCust);
   console.log(newStore);
-  newStore.render();
+  newStore.giveStore();
   elForm.reset();
 }
 
@@ -65,12 +65,12 @@ function printHeader() {
   var arrData = [];
   var elRow = document.createElement('tr');
   arrData.push('<td></td>');
-  // loops through and push the AM hours to the array
+    // loops through and push the AM hours to the array
   for (var i = 6; i < 12; i++) {
     arrData.push('<td>' + i + ':00am' + '</td>');
   }
   arrData.push('<td>12:00pm</td>');
-  // loops through and push the PM hours to the array
+    // loops through and push the PM hours to the array
   for (var k = 1; k < 8; k++) {
     arrData.push('<td>' + k + ':00pm' + '</td>');
   }
@@ -85,7 +85,7 @@ function printFooter() {
   var arrData = [];
   var elRow = document.createElement('tr');
   arrData.push('<td>Totals</td>');
-  // loops through and push the footer cells to the array
+    // loops through and push the footer cells to the array
   for (var i = 1; i < 16; i++) {
     arrData.push('<td></td>');
   }
@@ -102,11 +102,11 @@ var cooksAlki = new StoreLocation('Alki', 2, 16, 4.6);
 
 // call functions and methods to print table to HTML
 printHeader();
-cooksFirstAndPike.render();
-cookseatac.render();
-cookseattleCenter.render();
-cooksCapitolHill.render();
-cooksAlki.render();
+cooksFirstAndPike.giveStore();
+cookseatac.giveStore();
+cookseattleCenter.giveStore();
+cooksCapitolHill.giveStore();
+cooksAlki.giveStore();
 printFooter();
 
 elForm.addEventListener('submit', getFormData);
