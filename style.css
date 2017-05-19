@@ -224,6 +224,7 @@ article p{
   width:110px;
   height:auto;
   margin-left:95px;
+  margin-top: 20;
 }
 
 #Subhead-Pic img{
@@ -231,4 +232,45 @@ article p{
   width:180px;
   height:auto;
   margin-left:63px;
+  margin-top: 20;
 }
+
+#salmon {
+    height: 100;
+    width: 100;
+    margin-left: 80;
+    margin-top: 10;
+    float: left
+  }
+  footer {
+    width: 960;
+    height: 500;
+  }
+
+  #cutter{
+    width: 300;
+    height: 300;
+    float: left;
+    margin-left: 200;
+    margin-top: 50;
+  }
+
+  #chinook {
+    height: 300;
+    width: 300;
+    float: right;
+    margin-top: 50;
+    margin-right: 100;
+
+
+  }
+
+  #cookie {
+    height: 300;
+    width: 300;
+    position:relative;
+    margin-left: 930;
+    margin-bottom: 00;
+    margin-top: -300
+
+  }
