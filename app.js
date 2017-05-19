@@ -60,18 +60,18 @@ function getFormData(event) {
   elForm.reset();
 }
 
-// function to print the header for the table
+
 function printHeader() {
   var elHead = document.getElementById('tablehead');
   var arrData = [];
   var elRow = document.createElement('tr');
   arrData.push('<td></td>');
-    // loops through and push the AM hours to the array
+
   for (var i = 6; i < 12; i++) {
     arrData.push('<td>' + i + ':00am' + '</td>');
   }
   arrData.push('<td>12:00pm</td>');
-    // loops through and push the PM hours to the array
+
   for (var k = 1; k < 8; k++) {
     arrData.push('<td>' + k + ':00pm' + '</td>');
   }
@@ -80,7 +80,7 @@ function printHeader() {
   elHead.appendChild(elRow);
 }
 
-// function to print the header for the table
+
 function printFooter() {
   var elHead = document.getElementById('tablefoot');
   var arrData = [];
@@ -94,14 +94,14 @@ function printFooter() {
   elHead.appendChild(elRow);
 }
 
-// create instances of the StoreLocation object
+// creating Storelocation objects with previous constructor
 var cooksFirstAndPike = new StoreLocation('1st and Pike', 23, 65, 6.3);
 var cookseatac = new StoreLocation('SeaTac Airport', 3, 24, 1.2);
 var cookseattleCenter = new StoreLocation('Seattle Center', 11, 38, 3.7);
 var cooksCapitolHill = new StoreLocation('Capitol Hill', 20, 38, 2.3);
 var cooksAlki = new StoreLocation('Alki', 2, 16, 4.6);
 
-// call functions and methods to print table to HTML
+
 printHeader();
 cooksFirstAndPike.giveStore();
 cookseatac.giveStore();
