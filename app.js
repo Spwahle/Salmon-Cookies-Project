@@ -3,6 +3,7 @@
 var hoursOfOperation = ['6:00 AM', '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM'];
 
 //This is creating the constructor for my use to organize shops
+
 function CookShop(loca, minimum, max, avgPerCust) {
   this.loca = loca;
   this.minimum = minimum;
@@ -13,14 +14,17 @@ function CookShop(loca, minimum, max, avgPerCust) {
 }
 //my first method is is a randomCust function that floors a random number and multiplies it so it's with min-max
 CookShop.prototype.randomCust = function() {
+
   for (var i = 14; i > 0; i--) {
     this.totalCustEachHour.push((Math.floor(Math.random() * (this.max - this.minimum + 1))) + this.minimum);
   }
 };
 //my second is a method that calls a for loop
 CookShop.prototype.cookiesPerHour = function() {
+
   for (var i = 0; i <= 13; i++) {
     this.totalCookiesPerHour.push(Math.floor(this.totalCustEachHour[i] * this.avgPerCust));
+
   }
 };
 //my last method creates tr and th
@@ -37,15 +41,19 @@ CookShop.prototype.salesReportTableRows = function() {
   position.appendChild(newElement);
 
   var total = 0;
+
   for (var i in this.totalCookiesPerHour) {
+
     total += this.totalCookiesPerHour[i];
   }
 
   this.totalCookiesPerHour.push(total);
 
+
   for (i = 0; i <= hoursOfOperation.length; i++) {
     newElement = document.createElement('td');
        // newElement.id = 'countMe '+ i;
+
     crText = document.createTextNode(this.totalCookiesPerHour[i]);
     newElement.appendChild(crText);
     position = document.getElementById(this.loca + ' row');
@@ -61,13 +69,17 @@ var CookShopAlki = new CookShop('Alki', 2, 16, 4.6);
 
 var CookShops = [CookShopFirstPike, CookShopSeatacAirport, CookShopSeattleCenter, CookShopCapitolHill, CookShopAlki];
 
+
 for (var i = 0; i < CookShops.length; i++) {
+
   CookShops[i].randomCust();
   CookShops[i].cookiesPerHour();
 }
 console.log(CookShops);
 
+
 function salesReportTableHead(CookShops) {
+
   var newElement = document.createElement('table');
   newElement.id = 'salesReportTable';
   var position = document.getElementById('body');
@@ -87,7 +99,9 @@ function salesReportTableHead(CookShops) {
   position = document.getElementById('colHeadersRow');
   position.appendChild(newElement);
 
+
   for (var i = 0; i < hoursOfOperation.length; i++) {
+
     newElement = document.createElement('th');
     var crText = document.createTextNode(hoursOfOperation[i]);
     newElement.appendChild(crText);
@@ -102,6 +116,7 @@ function salesReportTableHead(CookShops) {
   position.appendChild(newElement);
 }
 
+
 var cookieTotalsPerHourAllShops = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 for (i = 0; i < hoursOfOperation.length; i++) {
@@ -110,6 +125,7 @@ for (i = 0; i < hoursOfOperation.length; i++) {
 
 var total = 0;
 for (i in cookieTotalsPerHourAllShops) {
+
   total += cookieTotalsPerHourAllShops[i];
 }
 
@@ -117,7 +133,9 @@ cookieTotalsPerHourAllShops.push(total);
 
 console.log(cookieTotalsPerHourAllShops);
 
+
 function salesReportTableFoot() {
+
   var newElement = document.createElement('tfoot');
   newElement.id = 'colTotals';
   var position = document.getElementById('salesReportTable');
@@ -134,7 +152,9 @@ function salesReportTableFoot() {
   position = document.getElementById('colTotalsRow');
   position.appendChild(newElement);
 
+
   for (var i = 0; i <= hoursOfOperation.length; i++) {
+
     newElement = document.createElement('td');
     crText = document.createTextNode(cookieTotalsPerHourAllShops[i]);
     newElement.appendChild(crText);
@@ -145,7 +165,9 @@ function salesReportTableFoot() {
 
 salesReportTableHead(CookShops);
 
+
 for (i = 0; i < CookShops.length; i++) {
+
   CookShops[i].salesReportTableRows();
 }
 
