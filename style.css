@@ -5,14 +5,15 @@
 }
 
 body{
-  background: rgb(219, 171, 115);
+
+    background-image: url(http://revelwallpapers.net/d/756D78797059764879724B586B356952716D3573734E6A653238696A63773D3D/rain-road.jpg);
   width:1500px;
 }
 
 header{
   height:500px;
-  background-color: rgb(219, 171, 115);
-  background-image:url();
+  background-color: #FF925D;
+  background-image:url(http://revelwallpapers.net/d/756D78797059764879724B586B356952716D3573734E6A653238696A63773D3D/rain-road.jpg);
   background-repeat:no-repeat;
   background-size:cover;
   margin: 0 auto;
@@ -25,18 +26,22 @@ header div{
 header h1, header h2{
   display:inline-block;
   position:absolute;
-  top:130px;
+
+  top:110px;
   width:100%;
   text-align:center;
   font:100px 'Bree Serif', serif;
-  color:white;
+  color: white;
   margin:auto;
 }
 
 header h2{
   position:relative;
   background:none;
-  top:250px;
+
+  top:220px;
+
+
   font:30px 'Bree Serif', serif;
 }
 
@@ -50,28 +55,40 @@ header div img{
 header nav{
   width:100%;
   height:70px;
-  background-color: salmon;
+  background-color: #F2AC54;
   text-align:center;
   margin-top: 280px;
+
+
 }
 
 header nav li{
   display:inline-block;
-  background: black;
+  background: #4D4E6D;
   border-radius:15px;
-  font:35px 'Bree Serif', serif;
+  font:35px 'Open Sans', serif;
   color:white;
-  margin:10px 10px;
+  margin:-40px 0px;
   padding:0px 50px;
+
+}
+
+nav {
+  border-color: black;
+  border: 3px;
+  padding-top: 79px;
+  width: 100%;
+  margin: 20px 0px;
 }
 
 header nav li a{
   text-decoration:none;
+  font-family:
   color:white;
 }
 
 header nav li a:hover{
-  color:;
+  color: ;
 }
 
 main{
@@ -82,32 +99,34 @@ main{
 .Paragraph{
   display:inline-block;
   float:left;
-  background: red;
+  background:  #4D4E6D;
   width: 500px;
   height:500px;
   margin:50px 20px 20px 20px;
 }
 
 .Paragraph h3{
-  font: 20px 'Bree Serif';
-  color: white;
+  font: 35px 'Bree Serif';
+  color: black;
   text-align: center;
+  margin: 30px;
+
 }
 
 .Paragraph p{
-  background: black;
-  text-align:center;
+  background: #214E8B;
+  text-align: center;
   font: 24px 'Open Sans', sans-serif;
-  color:white;
-  line-height:40px;
-  margin:20px 35px;
-  padding:20px 5px;
+  color: black;
+  line-height: 30px;
+  margin: 60px 35px;
+  padding: 20px 5px;
 }
 
 .Information{
   display:inline-block;
   float:left;
-  background: red;
+  background: #4D4E6D;
   border-radius:5px;
   width:600px;
   height:200px;
@@ -154,7 +173,7 @@ main{
 .RightPan {
   display:inline-block;
   float:left;
-  background: red;
+  background:  #4D4E6D;
   border-radius:5px;
   width:600px;
   height:300px;
@@ -163,30 +182,30 @@ main{
 }
 
 .RightPan h3{
-  font: 30px , serif;
-  color:white;
+  font: 30px baloo, serif;
+  color: black;
   text-align:center;
 }
 
 article{
   display:inline-block;
-  border:3px solid white;
+  border: 1px solid white;
   border-radius:5px;
   float:left;
-  background:rgba(0, 0, 0, 0.3);
+  background: #214E8B;
   width:294px;
   height:255px;
 }
 
 article h4{
-  font:23px 'Bree Serif', serif;
-  color:white;
+  font:23px 'Baloo', serif;
+  color: black;
   text-align:center;
 }
 
 article p{
   font:15px 'Bree Serif', sans-serif;
-  color:white;
+  color: black;
   margin:10px;
   text-align:center;
 }
@@ -194,7 +213,6 @@ article p{
 .community a{
   font:15px 'Sans Open', sans-serif;
   text-decoration:none;
-  color:#26C7FF;
 }
 
 .RightPan a:hover{
@@ -206,6 +224,7 @@ article p{
   width:110px;
   height:auto;
   margin-left:95px;
+  margin-top: 20;
 }
 
 #Subhead-Pic img{
@@ -213,4 +232,45 @@ article p{
   width:180px;
   height:auto;
   margin-left:63px;
+  margin-top: 20;
 }
+
+#salmon {
+    height: 100;
+    width: 100;
+    margin-left: 80;
+    margin-top: 10;
+    float: left
+  }
+  footer {
+    width: 960;
+    height: 500;
+  }
+
+  #cutter{
+    width: 300;
+    height: 300;
+    float: left;
+    margin-left: 200;
+    margin-top: 50;
+  }
+
+  #chinook {
+    height: 300;
+    width: 300;
+    float: right;
+    margin-top: 50;
+    margin-right: 100;
+
+
+  }
+
+  #cookie {
+    height: 300;
+    width: 300;
+    position:relative;
+    margin-left: 930;
+    margin-bottom: 00;
+    margin-top: -300
+
+  }
